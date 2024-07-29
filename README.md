@@ -1,4 +1,4 @@
-# Ctk-syllabus Format
+# ctk-syllabus Format
 
 ## Installing
 
