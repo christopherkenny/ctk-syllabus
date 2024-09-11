@@ -38,6 +38,12 @@ $endif$
 $if(region)$
   region: "$region$",
 $endif$
+$if(header-left)$
+  headerleft: "$header-left$",
+$endif$
+$if(header-right)$
+  headerright: "$header-right$",
+$endif$
 $if(margin)$
   margin: ($for(margin/pairs)$$margin.key$: $margin.value$,$endfor$),
 $endif$

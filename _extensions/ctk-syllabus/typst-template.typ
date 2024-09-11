@@ -19,6 +19,8 @@
   subtitle: none,
   authors: none,
   date: none,
+  headerleft: none,
+  headerright: none,
   cols: 1,
   margin: (x: 1in, y: 1in),
   paper: "us-letter",
@@ -38,10 +40,24 @@
   doc,
 ) = {
 
+  if headerleft == none {
+    headerleft = hide("left")
+  }
+  if headerright == none {
+    headerright = hide("right")
+  }
+
   set page(
     paper: paper,
     margin: margin,
     numbering: "1",
+        header: [
+      #headerleft
+      #h(1fr) #headerright
+      #v(-8pt)
+      #line(length: 100%)
+    ],
+    header-ascent: 30%,
   )
 
   set par(
@@ -81,7 +97,7 @@
     title: title,
     date: auto,
   )
-  
+
   if (authors != none) {
     set document(
         author: authors.map(author => content-to-string(author.name)).join(", ", last: ", and "),
@@ -163,8 +179,8 @@
       ]]
   }
 
-  line(length: 80%)
-  
+  align(center)[#line(length: 80%)]
+
   if toc {
     let title = if toc_title == none {
       auto

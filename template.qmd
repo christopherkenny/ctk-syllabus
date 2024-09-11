@@ -1,6 +1,8 @@
 ---
 title: A Course Syllabus
 subtitle: Built in typst
+header-left: A Course Syllabus
+header-right: Dept 1234
 format:
   ctk-syllabus-typst: default
 ---
@@ -11,9 +13,6 @@ format:
 
 ## More Information
 
-You can learn more about creating custom Typst templates here: 
+You can learn more about creating custom Typst templates here:
 
 <https://quarto.org/docs/prerelease/1.4/typst.html#custom-formats>
-
-
-
