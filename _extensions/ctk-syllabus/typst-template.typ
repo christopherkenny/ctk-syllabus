@@ -100,7 +100,7 @@
 
   if (authors != none) {
     set document(
-        author: authors.map(author => content-to-string(author.name)).join(", ", last: ", and "),
+        author: authors.map(author => to-string(author.name)).join(", ", last: ", and "),
     )
   }
 
@@ -153,13 +153,13 @@
                 #box(height: 9pt, image("ORCIDiD.svg"))
               ]
             ]
-            if author.department != none [
+            if "department" in author [
               \ #author.department
             ]
-            if author.university != none [
+            if "university" in author [
               \ #author.university
             ]
-            if author.location != [] [
+            if location in author [
               \ #author.location
             ]
             if "email" in author [
@@ -179,7 +179,9 @@
       ]]
   }
 
-  align(center)[#line(length: 80%)]
+  align(center)[
+    #line(length: 80%)
+  ]
 
   if toc {
     let title = if toc_title == none {
