@@ -51,7 +51,7 @@
     paper: paper,
     margin: margin,
     numbering: "1",
-        header: [
+    header: [
       #headerleft
       #h(1fr) #headerright
       #v(-8pt)
@@ -100,7 +100,10 @@
 
   if (authors != none) {
     set document(
-        author: authors.map(author => to-string(author.name)).join(", ", last: ", and "),
+      author: authors.map(author => to-string(author.name)).join(
+        ", ",
+        last: ", and ",
+      ),
     )
   }
 
@@ -171,7 +174,7 @@
 
       v(20pt, weak: true)
     }
-    }
+  }
 
   if date != none {
     align(center)[#block(inset: 1em)[
