@@ -1,6 +1,6 @@
 ---
 title: A Course Syllabus
-subtitle: Built in typst
+subtitle: Built with Typst
 header-left: A Course Syllabus
 header-right: Dept 1234
 format:
