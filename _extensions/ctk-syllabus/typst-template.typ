@@ -37,6 +37,7 @@
   toc_indent: 1.5em,
   linestretch: 1,
   linkcolor: "#800000",
+  suppress-bibliography: true,
   doc,
 ) = {
 
@@ -162,7 +163,7 @@
             if "university" in author [
               \ #author.university
             ]
-            if location in author [
+            if "location" in author [
               \ #author.location
             ]
             if "email" in author [
@@ -206,6 +207,16 @@
     first-line-indent: 1em,
     leading: linestretch * 0.65em,
   )
+  
+  show cite.where(form: "normal"): it => cite(it.key, form: "full")
+  
+  show bibliography: this => {
+    if suppress-bibliography {
+      none
+    } else {
+      this
+    }
+  }
 
   if cols == 1 {
     doc

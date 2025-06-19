@@ -10,10 +10,10 @@ contributes:
         - typst-show.typ
       mainfont:
         - "Spectral"
-        - "Crimson"
-        - "Crimson Text"
       codefont:
         - "Fira Code"
       date-format: long
       linestretch: 1.25
       linkcolor: "#800000"
+      bibliographystyle: chicago-author-date
+      suppress-bibliography: true

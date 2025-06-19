@@ -1,18 +1,82 @@
 ---
 title: A Course Syllabus
-subtitle: Built with Typst
+subtitle: Built in Quarto + Typst
 header-left: A Course Syllabus
 header-right: Dept 1234
+author:
+  - name: "Christopher T. Kenny"
+    email: email@university.edu
 format:
   ctk-syllabus-typst: default
+date: "Fall 2027"
+date-format: "[Fall 2027]" # print as-is
+bibliography: bibliography.bib
 ---
 
-## Introduction
+The introduction to a course usually introduces the major themes and goals of the course.
+This template aims to simplify the writing of a syllabus by providing a fast-rendering and clean style.
+It uses the normal fonts, sizes, and colors that the template author uses for writing.
 
-*TODO* Create an example file that demonstrates the formatting and features of your format.
+This means that you should install the [Spectral](https://fonts.google.com/specimen/Spectral) font.
+If it is installed, it will be used by default.
+Otherwise, you can set `mainfont: someotherfont` in the YAML header to use a different font.
 
-## More Information
+Currently, for author information on the first page, only the name and email are used.
+If this is insufficient, please open an issue at <https://github.com/christopherkenny/ctk-syllabus>.
 
-You can learn more about creating custom Typst templates here:
+# Course meetings
 
-<https://quarto.org/docs/prerelease/1.4/typst.html#custom-formats>
+Typically, information should be included on the course meetings.
+
+## Lectures
+
+Especially with regard to lecture expectations.
+
+## Sections
+
+And section meetings, if applicable.
+
+# Assignments
+
+Grading schemes can be specified in a table format.
+Tables in this template work off of [Quarto's markdown syntax](https://quarto.org/docs/authoring/tables.html).
+
+| Assignment | Points | Percentage |
+|:-----------|-------:|-----------:|
+| Lecture attendance | 25 | 12.5%  |
+| Section attendance | 25 | 12.5%  |
+| Problem Sets       | 70 | 35%    |
+| Prelim #1          | 20 | 10%    |
+| Prelim #2          | 20 | 10%    |
+| Final proposal     | 10 | 5%     |
+| Final              | 30 | 15%    |
+
+: You can add a caption like this, but it's probably not necessary. {#tbl-grading}
+
+But, giving it a name like above is helpful so you can reference @tbl-grading in the text.
+
+# Course policies
+
+Then, it's probably helpful to add some policies.
+
+## Use of Large Language Models
+
+> Using ChatGPT to complete assignments short-circuits the learning process, depriving students of the critical thinking and problem-solving skills that college is meant to develop. - ChatGPT, 4o
+
+# Course Materials
+
+A list of course materials can be included here.
+
+This template allows you to include a bibliography to reference.
+Citations in brackets will display as the full cite.
+Citations without brackets will display as a prose cite, so that you can reference it.
+General details about citations in Quarto can be found [here](https://quarto.org/docs/authoring/citations.html).
+The end bibliography is suppressed by default, so that you can include full cites in the full text.
+
+## Monday, January 45th
+
+- [@kenny2023widespread]
+
+Note: In @kenny2023widespread, focus on the introduction and discussion of competitiveness.
+
+--- 

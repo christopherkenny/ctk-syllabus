@@ -80,5 +80,8 @@ $endif$
 $if(linkcolor)$
   linkcolor: "$linkcolor$",
 $endif$
+$if(suppress-bibliography)$
+  suppress-bibliography: $suppress-bibliography$,
+$endif$
   doc,
 )
