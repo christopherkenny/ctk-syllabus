@@ -129,7 +129,7 @@
   if title != none {
     align(center)[
       #if frontmatter-logo != none {
-        image(frontmatter-logo, height: frontmatter-logo-height)
+        image(to-string(frontmatter-logo), height: frontmatter-logo-height)
       }
       #block(inset: 2em)[
         #text(weight: "bold", size: 30pt)[

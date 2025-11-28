@@ -84,7 +84,7 @@ $if(suppress-bibliography)$
   suppress-bibliography: $suppress-bibliography$,
 $endif$
 $if(frontmatter-logo)$
-  frontmatter-logo: "$frontmatter-logo$",
+  frontmatter-logo: [$frontmatter-logo$],
 $endif$
 $if(frontmatter-logo-height)$
   frontmatter-logo-height: $frontmatter-logo-height$,

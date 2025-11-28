@@ -31,6 +31,8 @@ For an introduction to Quarto, see the [Quarto documentation](https://quarto.org
 - `header-right`: A header on the top right
 - `date`: The date of the syllabus
 - `date-format`: To specify a non-real date, such as a semester, use this with `[Semester Year]`, e.g., `[Fall 2027]`
+- `frontmatter-logo`: Path to a logo to place above the title
+- `frontmatter-logo-height`: Height of the logo, if used. Should be a Typst length.
 
 ### Bibliography
 
