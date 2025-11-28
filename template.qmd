@@ -11,6 +11,8 @@ format:
 date: "Fall 2027"
 date-format: "[Fall 2027]" # print as-is
 bibliography: bibliography.bib
+frontmatter-logo: "example-course-logo.png"
+frontmatter-logo-height: 0.5in
 ---
 
 The introduction to a course usually introduces the major themes and goals of the course.
@@ -80,3 +82,5 @@ The end bibliography is suppressed by default, so that you can include full cite
 Note: In @kenny2023widespread, focus on the introduction and discussion of competitiveness.
 
 --- 
+
+{{< lipsum 20 >}}

@@ -38,6 +38,8 @@
   linestretch: 1,
   linkcolor: "#800000",
   suppress-bibliography: true,
+  frontmatter-logo: none,
+  frontmatter-logo-height: auto,
   doc,
 ) = {
 
@@ -126,6 +128,9 @@
   // start article content
   if title != none {
     align(center)[
+      #if frontmatter-logo != none {
+        image(frontmatter-logo, height: frontmatter-logo-height)
+      }
       #block(inset: 2em)[
         #text(weight: "bold", size: 30pt)[
           #title
