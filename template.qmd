@@ -10,6 +10,8 @@ format:
   ctk-syllabus-typst: default
 date: "Fall 2027"
 date-format: "[Fall 2027]" # print as-is
+office: "Office: 123 Example Hall"
+office-hours: "Office hours: Tuesday, 2:00--4:00 PM"
 bibliography: bibliography.bib
 frontmatter-logo: "example-course-logo.png"
 frontmatter-logo-height: 0.5in
@@ -23,8 +25,8 @@ This means that you should install the [Spectral](https://fonts.google.com/speci
 If it is installed, it will be used by default.
 Otherwise, you can set `mainfont: someotherfont` in the YAML header to use a different font.
 
-Currently, for author information on the first page, only the name and email are used.
-If this is insufficient, please open an issue at <https://github.com/christopherkenny/ctk-syllabus>.
+For syllabus-specific contact information such as office location and office hours,
+use the top-level `office` and `office-hours` YAML fields.
 
 # Course meetings
 
@@ -81,6 +83,6 @@ The end bibliography is suppressed by default, so that you can include full cite
 
 Note: In @kenny2023widespread, focus on the introduction and discussion of competitiveness.
 
---- 
+---
 
-{{< lipsum 20 >}}
+{{< lipsum 2 >}}

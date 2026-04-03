@@ -24,13 +24,18 @@ For an introduction to Quarto, see the [Quarto documentation](https://quarto.org
 
 - `title`: Your course's title
 - `subtitle`: Your course's subtitle
-- `author`: Author information. Provide subfields below:
+- `author`: Author information. Common subfields include:
   - `name`: Your name
   - `email`: Your email address
+  - `department`: Your department name
+  - `university`: Your institution name
+  - `location`: Your city/state or other location line
 - `header-left`: A header on the top left
 - `header-right`: A header on the top right
 - `date`: The date of the syllabus
 - `date-format`: To specify a non-real date, such as a semester, use this with `[Semester Year]`, e.g., `[Fall 2027]`
+- `office`: Optional office location text shown below the date
+- `office-hours`: Optional office hours text shown below the office line
 - `frontmatter-logo`: Path to a logo to place above the title
 - `frontmatter-logo-height`: Height of the logo, if used. Should be a Typst length.
 

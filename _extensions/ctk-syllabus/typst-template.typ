@@ -40,6 +40,8 @@
   suppress-bibliography: true,
   frontmatter-logo: none,
   frontmatter-logo-height: auto,
+  office: none,
+  office-hours: none,
   doc,
 ) = {
 
@@ -188,6 +190,20 @@
       ]]
   }
 
+  if office != none or office-hours != none {
+    align(center)[
+      #if office != none [
+        #office
+      ]
+      #if office != none and office-hours != none {
+        linebreak()
+      }
+      #if office-hours != none [
+        #office-hours
+      ]
+    ]
+  }
+
   align(center)[
     #line(length: 80%)
   ]
@@ -212,9 +228,9 @@
     first-line-indent: 1em,
     leading: linestretch * 0.65em,
   )
-  
+
   show cite.where(form: "normal"): it => cite(it.key, form: "full")
-  
+
   show bibliography: this => {
     if suppress-bibliography {
       none

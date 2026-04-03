@@ -32,6 +32,12 @@ $endif$
 $if(date)$
   date: [$date$],
 $endif$
+$if(office)$
+  office: [$office$],
+$endif$
+$if(office-hours)$
+  office-hours: [$office-hours$],
+$endif$
 $if(lang)$
   lang: "$lang$",
 $endif$
