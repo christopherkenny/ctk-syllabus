@@ -6,6 +6,11 @@ header-right: Dept 1234
 author:
   - name: "Christopher T. Kenny"
     email: email@university.edu
+    affiliations:
+      - department: Your Department Name
+        name: Your Institution Name
+        city: Your City
+        country: Your State/Country
 format:
   ctk-syllabus-typst: default
 date: "Fall 2027"
